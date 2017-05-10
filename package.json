@@ -1,0 +1,39 @@
+{
+  "name": "chromeum",
+  "version": "0.0.0",
+  "description": "custom background page for chrome/chromium",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+    "build-html": "pug index.pug --pretty; pug app/views/",
+    "build-js": "webpack --config ./webpack.config.js --display-reasons",
+    "build-css": "stylus app/styles/",
+    "build-all": "npm run build-css && npm run build-html && npm run build-js"
+  },
+  "keywords": [
+    "chrome",
+    "tab",
+    "web",
+    "app"
+  ],
+  "author": "Khalid Hoffman",
+  "license": "MIT",
+  "devDependencies": {
+    "@angular/common": "^4.1.0",
+    "@angular/compiler": "^4.1.0",
+    "@angular/core": "^4.1.0",
+    "@angular/forms": "^4.1.0",
+    "@angular/http": "^4.1.0",
+    "@angular/platform-browser": "^4.1.0",
+    "@angular/platform-browser-dynamic": "^4.1.0",
+    "@angular/router": "^4.1.0",
+    "@angular/upgrade": "^4.1.0",
+    "core-js": "^2.4.1",
+    "moment": "^2.18.1",
+    "pug": "^2.0.0-beta.12",
+    "pug-loader": "^2.3.0",
+    "raw-loader": "^0.5.1",
+    "rxjs": "^5.3.0",
+    "zone.js": "^0.8.9"
+  }
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo|Open+Sans|Roboto|Roboto+Condensed|Roboto+Mono|Source+Code+Pro');
+
+body
+  /*
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-family: 'Source Code Pro', monospace;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Heebo', sans-serif;
+  */
+  font-family: 'Heebo', sans-serif;
+  background-color lighten(#000, 20%)
+  margin 0
+
+.main
+  display flex
+  align-items center
+  justify-content center
+  height 100vh
+
+.clock
+  &-time,
+  &-percentage
+    text-align: center
+    color: #ee3
+    text-shadow 1px 0px 6px #000;
+  &-percentage
+    font-size 10rem
+  &-time
+    font-size: 1.5rem;

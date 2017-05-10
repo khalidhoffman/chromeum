@@ -1,0 +1,5 @@
+*.pak
+*.swp
+*.swo
+.idea/
+node_modules/

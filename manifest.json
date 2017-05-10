@@ -1,0 +1,40 @@
+{
+
+  "name": "chromeum",
+  "version": "0.1",
+  "description": "custom background page for chrome/chromium",
+  "browser_action": {
+    "default_title": "browser_action Title"
+  },
+  "page_action": {
+    "default_title": "page_action Title"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "app": {
+    "launch": {
+      "local_path": "./index.html"
+    }
+  },
+  "permissions": [
+    "https://*.google.com/",
+    "bookmarks",
+    "chrome://favicon/",
+    "clipboardRead",
+    "clipboardWrite",
+    "contextMenus",
+    "cookies",
+    "geolocation",
+    "history",
+    "management",
+    "notifications",
+    "tabs",
+    "tts",
+    "ttsEngine",
+    "https://fonts.googleapis.com/",
+    "unlimitedStorage"
+  ],
+  "manifest_version": 2
+}
